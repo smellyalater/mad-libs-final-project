@@ -1,0 +1,57 @@
+body {
+  background-color: #DCC6E0;
+}
+
+
+.block {
+    width: 95%;
+    height: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px grey;
+    padding: 10px;
+}
+
+.welcome {
+  background-color: #C8F7C5;
+}
+
+.intro {
+  background: #446CB3;
+}
+
+.instructions {
+  background-color: #52B3D9;
+}
+
+.words {
+  background-color: #3A539B;
+}
+
+.thinking {
+  background-color: ##EAE6DB;
+}
+
+.story {
+  background-color: #65C6BB;
+}
+
+.the-end {
+  background-color: #F4D03F;
+}
+
+.story-is-ready, #preload-complete {
+  display: none;
+}
+
+.story-is-ready.story-loaded, #preload-complete.story-loaded {
+  display: block;
+}
+
+#preloader-img {
+  display: none;
+}
+
+#preloader-img.preloading-cat {
+  display: block;
+  height: auto;
+}

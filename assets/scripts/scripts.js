@@ -1,10 +1,40 @@
 $(document).on('ready', function() {
 
+//Reset Button Function
+function resetForm() {
+  $(this).parent()[0].reset();
+}
+  
+// Create an empty array to hold the words
+var words = [];
 
-//get screen height
-// var screenHeight = window.innerHeight;
-//   $('.block').css("height",  + screenHeight + "px");
+// When the form is submitted
+$('#word-input').submit(function(event) {
+  // Prevent the default form behavior
+    event.preventDefault();
 
+  // Get an array of all the <input> elements
+  var elements = $(this).find('input[type=text]');
+
+  // Loop through the array of the <input> elements
+    for (var i = 0; i <= elements.length - 1; i++) {
+      //  For each <input> element, get the value the user entered
+      var value = $(elements[i]).val();
+      // push the value onto the array of words
+      words.push(value);
+    }
+  // console.log(words);
+});
+
+
+// Build up the story:
+var story = "Once upon a time there were two " + words[0] + " who had ";
+
+// append story into the DOM
+
+
+// $('.resetForm').on('click', 'resetForm()');
+$('.resetForm').on('click', resetForm );
 
 //animate scroll to next div - thanks css-tricks!
 //css-tricks.com/snippets/jquery/smooth-scrolling/
@@ -16,28 +46,23 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 1200);
         return false;
       }
     }
   });
 });
 
-//Set input fields in localstorage
-
 
 //Timeout for loading cat gif
-
-//when someone clicks previous button
 $('#catloader').on('click', function() {
-  //add class to display preloader
-   $('#preloader-img').addClass('preloading-cat');
-     setTimeout(function() {
-  //after 6seconds, remove class
-  $('#preloader-img').removeClass('preloading-cat');
-  $('#preload-complete, .story-is-ready').addClass('story-loaded');
-  }, 6000)
-    //after 6 seconds display proceed button and confirmation message
-    
+    $('#preloader-img').addClass('preloading-cat');
+       setTimeout(function() {
+    $('#preloader-img').removeClass('preloading-cat');
+    $('#preload-complete, .story-is-ready').addClass('story-loaded');
+    }, 6000)    
   });
+
+
+
 });

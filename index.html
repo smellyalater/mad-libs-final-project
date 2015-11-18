@@ -4,6 +4,8 @@
 <head>
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/scripts/scripts.js"></script>
 </head>
@@ -12,9 +14,11 @@
     <!-- Welcome -->
     <div id="welcome" class="block welcome">
         <h1>This is Mad Libs</h1>
-        <form>
-            <label>Hello friend, what's your name?</label>
-            <input name="firstName" type="text">
+        <form id='name-form'>
+            <label>Hello friend, what's your first name?</label>
+            <input name="firstName" type="text" placeholder="First name" class="first-name"></input>
+            <input type="button" class="submit" value="Submit"></input>
+            <i class="material-icons resetForm">close</i>
         </form>
         <a class="proceed" href="#intro">Proceed</a>
     </div>
@@ -22,7 +26,7 @@
     <!-- Intro -->
     <div id="intro" class="block intro">
         <h1>Exquisite Corpse</h1>
-          <p>We'll be playing a phrasal template word commonly known as Mad Libs®</p>
+          <p>We'll be playing a phrasal template word commonly known as Mad Libs&reg;</p>
           <p>The French used to call it <em>Exquisite Corpse</em></p>
             <img class="corpse" src=" " alt="Image of Exquisite Corpose sample">
           <a class="proceed" href="#instructions">Proceed to instructions</a>
@@ -40,10 +44,9 @@
 
 
 <!-- User inserts words -->
-    <div id="words" class="block words">
-      <form class="word-input">
+    <div id="#words" class="block words">
+      <form id="word-input">
         <input name="plural-noun" type="text" placeholder="Plural Noun">
-        <!-- <input name="person-in-room" type="text" placeholder="Person in the room"> -->
         <input name="adjective" type="text" placeholder="Adjective">
         <input name="noun-1" type="text" placeholder="Noun">
         <input name="noun-2" type="text" placeholder="Noun">
@@ -58,9 +61,10 @@
         <input name="verb" type="text" placeholder="Verb">
         <input name="noun-8" type="text" placeholder="Noun">
         <input name="adjective-2" type="text" placeholder="Adjective">
-        <input name="noun-8" type="text" placeholder="Noun"> 
+        <input name="noun-8" type="text" placeholder="Noun">
+        
+        <a href="#thinking"><input type="submit" value="Get your story" id="submit-story"></input></a>
      </form>
-     <a id="catloader" href="#thinking">Proceed</a>
     </div>
 
 <!-- Thinking -->

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>test</title>
+    <title>The Most Exquisite Corpse</title>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -40,6 +40,7 @@
     <!-- User inserts words -->
     <div id="mad-libs" class="block words">
       <h1>The Exquisite Corpse</h1>
+      <div class="form-container">
         <form id="word-input">
             <input class="input-field" name="plural-noun" type="text" placeholder="Plural Noun">
             <input class="input-field"  name="adjective" type="text" placeholder="Adjective">
@@ -61,8 +62,8 @@
               <input class="proceed" type="submit" value="Submit" id="submit-story"/>
               <span class="reset-form">Reset Form</span>
             </div>
-            <a href="#thinking" class="proceed" id="catloader">Proceed</a>
         </form>
+      </div>
     </div>
 
 
@@ -71,7 +72,7 @@
       <h1>Thinking. . .</h1>
         <img id="preloader-img" src="assets/images/batmanPlayingSuperman.gif" />
         <p class="story-is-ready">It's ready!!</p>
-        <a class="proceed" id="preload-complete" href="#story">git ur story</a>
+        <a class="proceed" id="preload-complete" href="#story">Read your story</a>
     </div>
     <!-- Story -->
     <div id="story" class="block story">

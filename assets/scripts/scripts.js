@@ -18,60 +18,47 @@ $(function() {
 });
 
 
-
-
-//Reset Button Function
-function resetForm() {
-  $('.resetForm').click(function() {
-      $(this).closest('form').find("input[type=text], textarea").val("");
-  });
-}
-
-
-    var madLibsWords = [];
-    $('#word-input').submit(function(event) {
-    event.preventDefault();
-    // var elements = $(this).find('input[type=text]');
-    // for (var i = 0; i <= elements.length - 1; i++) {
-    //   var value = $(elements[i]).val();
-    //   madLibsWords.push(value);
-    // }
-});
-
+// Mad Libs Scripts
+// On form submit, store inputs in variable and scroll page to #thinking div.
 var madLibsWords = [];
 
-// Mad Libs Scripts
-// Create an empty array to hold the words
-// When the form is submitted
 $('#word-input').submit(function(event) {
-  // Prevent the default form behavior
-  event.preventDefault();
-  // Get an array of all the <input> elements
-  var elements = $(this).find('input[type=text]');
-  console.log('prevented default');
-  // Loop through the array of the <input> elements
-  for (var i = 0; i <= elements.length - 1; i++) {
-    //  For each <input> element, get the value the user entered
+  {
+    event.preventDefault();
+    var elements = $(this).find('input[type=text]');
+    for (var i = 0; i <= elements.length - 1; i++) {
     var value = $(elements[i]).val();
-    // push the value onto the array of words
     madLibsWords.push(value);
+  } 
+
+  {
+    $('body,html').animate({'scrollTop':$('#thinking').offset().top}, 1200);
   }
 
-  console.log(madLibsWords);
+}
 
-  var story = "The " + madLibsWords[0] + " went to the " + madLibsWords[1] + ' ' + madLibsWords[2];
+console.log(madLibsWords);
+
+var story = "The " + madLibsWords[0] + " went to the " + madLibsWords[1] + ' ' +  madLibsWords[2];
   console.log(story);
   $('.storytime').text(story);
 });
 
+//Reset Button Function
+$('.reset-form').on('click', function() {
+  $(this).closest('form').find("input[type=text], textarea").val("");
+});
 
-// Build up the story:
-// var story = "Once upon a time there were two " + madLibsWords[0] + " who had ";
+
+// $('#submit-story').on('click', function(event) {
+//   event.preventDefault();
+//   $('body,html').animate({'scrollTop':$('#thinking').offset().top}, 1200);
+// });
 
 
 
 //Timeout for loading cat gif
-$('#catloader').on('click', function() {
+$('#submit-story').on('click', function() {
     $('#preloader-img').addClass('preloading-cat');
        setTimeout(function() {
     $('#preloader-img').removeClass('preloading-cat');

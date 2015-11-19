@@ -6,7 +6,7 @@ body {
 .block {
   width: 100%;
   height: auto;
-  min-height: 800px;
+  min-height: 1000px;
   margin: 0px auto;
 }
 
@@ -37,8 +37,8 @@ body {
 }
 
 .proceed:hover {
-  background-color: #62DE62;
-  border:1px solid #62DE62;
+  background-color: #3AAD3B;
+  border:1px solid #3AAD3B;
   color: white;
 }
 
@@ -236,11 +236,13 @@ i.material-icons.resetForm:hover {
 
 .story-is-ready.story-loaded {
     display: block;
-    background-color: #FFF5BF;
-    margin: 30px auto;
-    width: 100px;
+    background-color: #97D397;
+    margin: 50px auto;
+    width: 300px;
     text-align: center;
-    padding: 20px;
+    padding: 40px 0px;
+    font-size: 30px;
+    border-radius: 20px;
 }
 
 
@@ -256,7 +258,7 @@ i.material-icons.resetForm:hover {
     display: block;
     height: auto;
     margin: 0 auto;
-    width: 300px;
+    width: 600px;
 }
 
 /********* Story Block *************/
@@ -268,13 +270,16 @@ i.material-icons.resetForm:hover {
 
 /********* The End Block *************/
 .block.the-end {
-  min-height: 0px;
+    background-color: black;
+    width: 100%;
+    margin: 0px auto;
+    display: inline-block;
 }
 
 .the-end img {
   width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
 

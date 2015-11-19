@@ -38,25 +38,31 @@ function resetForm() {
     // }
 });
 
-//Mad Libs Scripts
+var madLibsWords = [];
+
+// Mad Libs Scripts
 // Create an empty array to hold the words
 // When the form is submitted
-  // $('#word-input').submit(function(event) {
-// Prevent the default form behavior
-  // event.preventDefault();
-  // var madLibsWords = [];
-  // console.log('prevented default');
-// Get an array of all the <input> elements
-  // var elements = $(this).find('input[type=text]');
-  // console.log('prevented default');
-// Loop through the array of the <input> elements
-   // for (var i = 0; i <= elements.length - 1; i++) {
-  //  For each <input> element, get the value the user entered
-   // var value = $(elements[i]).val();
-  // push the value onto the array of words
-    // madLibsWords.push(value);
-    // }
-// });
+$('#word-input').submit(function(event) {
+  // Prevent the default form behavior
+  event.preventDefault();
+  // Get an array of all the <input> elements
+  var elements = $(this).find('input[type=text]');
+  console.log('prevented default');
+  // Loop through the array of the <input> elements
+  for (var i = 0; i <= elements.length - 1; i++) {
+    //  For each <input> element, get the value the user entered
+    var value = $(elements[i]).val();
+    // push the value onto the array of words
+    madLibsWords.push(value);
+  }
+
+  console.log(madLibsWords);
+
+  var story = "The " + madLibsWords[0] + " went to the " + madLibsWords[1] + ' ' + madLibsWords[2];
+  console.log(story);
+  $('.storytime').text(story);
+});
 
 
 // Build up the story:
@@ -70,7 +76,7 @@ $('#catloader').on('click', function() {
        setTimeout(function() {
     $('#preloader-img').removeClass('preloading-cat');
     $('#preload-complete, .story-is-ready').addClass('story-loaded');
-    }, 8000)    
+    }, 8000)
   });
 
 

@@ -2,30 +2,36 @@ $(document).on('ready', function() {
 
 //Reset Button Function
 function resetForm() {
-  $(this).parent()[0].reset();
+  $('.resetForm').click(function() {
+      $(this).closest('form').find("input[type=text], textarea").val("");
+  });
 }
-  
-// Create an empty array to hold the words
-var words = [];
 
-// When the form is submitted
-$('#word-input').submit(function(event) {
-  // Prevent the default form behavior
-    event.preventDefault();
-
-  // Get an array of all the <input> elements
-  var elements = $(this).find('input[type=text]');
-
-  // Loop through the array of the <input> elements
-    for (var i = 0; i <= elements.length - 1; i++) {
-      //  For each <input> element, get the value the user entered
-      var value = $(elements[i]).val();
-      // push the value onto the array of words
-      words.push(value);
-    }
-  // console.log(words);
+//First name form submit
+$('#name-form').submit(function(event) {
+  // event.preventDefault();
+  console.log('hey');
+  // var firstName = $('.first-name').val();
 });
 
+
+//Mad Libs Scripts
+// Create an empty array to hold the words
+  var words = [];
+// When the form is submitted
+  $('#word-input').submit(function(event) {
+// Prevent the default form behavior
+  event.preventDefault();
+// Get an array of all the <input> elements
+  var elements = $(this).find('input[type=text]');
+// Loop through the array of the <input> elements
+   for (var i = 0; i <= elements.length - 1; i++) {
+  //  For each <input> element, get the value the user entered
+   var value = $(elements[i]).val();
+  // push the value onto the array of words
+    words.push(value);
+    }
+});
 
 // Build up the story:
 var story = "Once upon a time there were two " + words[0] + " who had ";

@@ -14,7 +14,7 @@
 
 <body>
     <!-- Welcome -->
-    <div id="welcome" class="block welcome">
+    <!-- <div id="welcome" class="block welcome">
         <h1>This is Mad Libs</h1>
         <form id='name-form' class="name-form">
             <div class="form-container">
@@ -26,46 +26,55 @@
               <input type="button" class="submit name-form-submit" value="Submit"></input>
               </a>
         </form>
-    </div>
+    </div> -->
     <!-- Intro -->
     <div id="intro" class="block intro">
         <h1>Exquisite Corpse</h1>
-        <p>We'll be playing a phrasal template word commonly known as Mad Libs&reg;</p>
-        <p>The French used to call it <em>Exquisite Corpse</em></p>
-        <img class="corpse" src=" " alt="Image of Exquisite Corpose sample">
-        <a class="proceed" href="#instructions">Proceed to instructions</a>
+        <div class="body-copy">
+          <p>Welcome friend !</p>
+          <p>We'll be playing a phrasal template word commonly known as Mad Libs<span>&reg.</span></p>
+          <p>A relatively new twist on the <em>Exquisite Corpse</em>.</p>
+          <a class="proceed" href="#instructions">surely</a>
+        </div>
+        
     </div>
+
+
     <!-- instructions -->
-    <div id="instructions" class="block instructions">
-        <h1>Instructions</h1>
-        <p>This is very simple.</p>
-        <p>It's going to ask you for 6 words.</p>
-        <p>Fill them in and when you're done, you can read a story with your 6 words.</p>
-        <p>mmmm'kay?</p>
-        <a href="#words">Proceed</a>
-    </div>
+  <div id="instructions" class="block instructions">
+    <h1>Instructions</h1>
+        <div class="body-copy">
+            <p>This is very simple.</p>
+            <p>I'm going going to ask you for some words.</p>
+            <p>Fill them in and select the "proceed" button.</p>
+            <a class="proceed" href="#words">mmmm'kay</a>
+        </div>
+  </div>
+
     <!-- User inserts words -->
-    <div id="#words" class="block words">
+    <div id="words" class="block words">
+      <h1>Words</h1>
         <form id="word-input">
-            <input name="plural-noun" type="text" placeholder="Plural Noun">
-            <input name="adjective" type="text" placeholder="Adjective">
-            <input name="noun-1" type="text" placeholder="Noun">
-            <input name="noun-2" type="text" placeholder="Noun">
-            <input name="part-of-body-1" type="text" placeholder="Part of Body">
-            <input name="plural-noun" type="text" placeholder="Plural Noun">
-            <input name="noun-3" type="text" placeholder="Noun">
-            <input name="noun-4" type="text" placeholder="Noun">
-            <input name="exclamation" type="text" placeholder="Exclamation">
-            <input name="noun-5" type="text" placeholder="Noun">
-            <input name="noun-6" type="text" placeholder="Noun">
-            <input name="noun-7" type="text" placeholder="Noun">
-            <input name="verb" type="text" placeholder="Verb">
-            <input name="noun-8" type="text" placeholder="Noun">
-            <input name="adjective-2" type="text" placeholder="Adjective">
-            <input name="noun-8" type="text" placeholder="Noun">
-            <a href="#thinking">
-                <input type="submit" value="Get your story" id="submit-story"></input>
-            </a>
+<!--           <div class="input-field-container"> -->
+            <input class="input-field" name="plural-noun" type="text" placeholder="Plural Noun">
+            <input class="input-field"  name="adjective" type="text" placeholder="Adjective">
+            <input class="input-field"  name="noun-1" type="text" placeholder="Noun">
+            <input class="input-field"  name="noun-2" type="text" placeholder="Noun">
+            <input class="input-field"  name="part-of-body-1" type="text" placeholder="Part of Body">
+            <input class="input-field"  name="plural-noun" type="text" placeholder="Plural Noun">
+            <input class="input-field"  name="noun-3" type="text" placeholder="Noun">
+            <input class="input-field"  name="noun-4" type="text" placeholder="Noun">
+            <input class="input-field"  name="exclamation" type="text" placeholder="Exclamation">
+            <input class="input-field"  name="noun-5" type="text" placeholder="Noun">
+            <input class="input-field"  name="noun-6" type="text" placeholder="Noun">
+            <input class="input-field"  name="noun-7" type="text" placeholder="Noun">
+            <input class="input-field"  name="verb" type="text" placeholder="Verb">
+            <input class="input-field"  name="noun-8" type="text" placeholder="Noun">
+            <input class="input-field"  name="adjective-2" type="text" placeholder="Adjective">
+            <input class="input-field"  name="noun-8" type="text" placeholder="Noun">
+          <!-- </div> -->
+                <input class="proceed" type="submit" value="Get your story" id="submit-story"/>
+            
         </form>
     </div>
     <!-- Thinking -->

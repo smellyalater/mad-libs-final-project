@@ -3,115 +3,209 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
 .block {
-    width: 100%;
-    height: 800px;
-    margin: 0px auto;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: 0px auto;
 }
 
 .block h1 {
-  margin: 0px;
   font-family: 'Exo 2', sans-serif;
+  display: inline-block;
+  text-align: center;
+  background: tomato;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.proceed {
+  background-color: white;
+  border: 1px solid #444;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 500px;
+  transition: all .3s ease;
+  text-decoration: none;
+  color: #444;
+  text-align: center;
+  width: 150px;
+}
+
+.proceed:hover {
+  background-color: #62DE62;
 }
 
 
 /********** Welcome Block **********/
 
 
-i.material-icons.resetForm {
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-left: 10px;
+/*i.material-icons.resetForm {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 i.material-icons.resetForm:hover {
-    background: red;
-    transition: all .8s ease;
+  background: red;
+  transition: all .8s ease;
 }
 
 .welcome {
-  background-color: #C8F7C5;
-  border-bottom: 5px solid #6C7A89;
+background-color: #C8F7C5;
+border-bottom: 5px solid #6C7A89;
 }
 
 .welcome h1 {
-    display: inline-block;
-    text-align: center;
-    background: tomato;
-    margin: 0;
-    padding: 10px 0;
-    width: 100%;
-    margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+  background: tomato;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .form-container {
-    background: lightblue;
-    padding: 20px;
-    margin-top: 50px;
-    display: inline-block;
-    width: 460px;
-    font-size: 24px;
+  background: lightblue;
+  padding: 20px;
+  margin-top: 50px;
+  display: inline-block;
+  width: 460px;
+  font-size: 24px;
 }
 
 input.first-name {
-    display: inline-block;
-    padding: 10px;
-    width: 358px;
-    margin-top: 10px;
-    font-size: .7em;
-    border: none;
-    background: #E4F8FF;
+  display: inline-block;
+  padding: 10px;
+  width: 358px;
+  margin-top: 10px;
+  font-size: .7em;
+  border: none;
+  background: #E4F8FF;
 }
 
 form.name-form {
-  width: 500px;
+width: 500px;
 }
 
 .form-actions {
-  float: right;
+float: right;
 }
 
 .name-form-submit {
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px 50px;
-    font-size: 16px;
-    margin: 10px 0;
-    display: inline-block;
-    border-radius: 500px;
-    float: right;
-    transition: all .3s ease;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 50px;
+  font-size: 16px;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 500px;
+  float: right;
+  transition: all .3s ease;
 }
 
 .name-form-submit:hover {
-    background-color: #62DE62;
-}
+  background-color: #62DE62;
+}*/
 
 
 /*********** Intro block *************/
 
 .intro {
-  background: #446CB3;
-  border-bottom: 5px solid #D2D7D3;
+  background-color: #C8F7C5;
+  border-bottom: 5px solid #6C7A89;
 }
+
+.body-copy {
+  display: block;
+  background-color: lightblue;
+  margin: 50px 25%;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.intro p:first-of-type {
+  border-bottom: 2px solid yellow;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+.intro span {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+/********* Instructions Block *************/
 
 .instructions {
   background-color: #52B3D9;
   border-bottom: 5px solid #EEEEEE;
 }
 
+.instructions .body-copy {
+  display: block;
+  background-color: lightblue;
+  margin: 50px 25%;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.instructions p:first-of-type {
+  border-bottom: 2px solid #6C7A89;
+  display: inline-block;
+  margin-bottom: -2px;
+
+}
+
+.instructions .proceed {
+  display: block;
+  margin: 0 auto;
+}
+
+/********* Words Block *************/
+
 .words {
-  background-color: #3A539B;
+  background-color: #E9D460;
   border-bottom: 5px solid #BDC3C7;
 }
+
+#word-input {
+  margin: 30px auto;
+}
+
+.input-field {
+    display: inline-block;
+    margin: 10px;
+    border: 5px solid #FFF5BF;
+    padding: 10px 80px 10px 5px;
+    font-size: 20px;
+}
+
+.input-field-container {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.words .proceed {
+  margin-top: 40px;
+}
+
+
+
+/********* Thinking Block *************/
 
 .thinking {
   background-color: ##EAE6DB;
   border-bottom: 5px solid #ECF0F1;
 }
-
 
 .story {
   background-color: #65C6BB;
@@ -123,11 +217,13 @@ form.name-form {
   border-bottom: 5px solid #DADFE1;
 }
 
-.story-is-ready, #preload-complete {
+.story-is-ready,
+#preload-complete {
   display: none;
 }
 
-.story-is-ready.story-loaded, #preload-complete.story-loaded {
+.story-is-ready.story-loaded,
+#preload-complete.story-loaded {
   display: block;
 }
 
@@ -139,4 +235,3 @@ form.name-form {
   display: block;
   height: auto;
 }
-

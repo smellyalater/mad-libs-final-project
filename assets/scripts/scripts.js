@@ -1,47 +1,5 @@
 $(document).on('ready', function() {
 
-//Reset Button Function
-function resetForm() {
-  $('.resetForm').click(function() {
-      $(this).closest('form').find("input[type=text], textarea").val("");
-  });
-}
-
-//First name form submit
-$('#name-form').submit(function(event) {
-  // event.preventDefault();
-  console.log('hey');
-  // var firstName = $('.first-name').val();
-});
-
-
-//Mad Libs Scripts
-// Create an empty array to hold the words
-  var words = [];
-// When the form is submitted
-  $('#word-input').submit(function(event) {
-// Prevent the default form behavior
-  event.preventDefault();
-// Get an array of all the <input> elements
-  var elements = $(this).find('input[type=text]');
-// Loop through the array of the <input> elements
-   for (var i = 0; i <= elements.length - 1; i++) {
-  //  For each <input> element, get the value the user entered
-   var value = $(elements[i]).val();
-  // push the value onto the array of words
-    words.push(value);
-    }
-});
-
-// Build up the story:
-var story = "Once upon a time there were two " + words[0] + " who had ";
-
-// append story into the DOM
-
-
-// $('.resetForm').on('click', 'resetForm()');
-$('.resetForm').on('click', resetForm );
-
 //animate scroll to next div - thanks css-tricks!
 //css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
@@ -60,13 +18,59 @@ $(function() {
 });
 
 
+
+
+//Reset Button Function
+function resetForm() {
+  $('.resetForm').click(function() {
+      $(this).closest('form').find("input[type=text], textarea").val("");
+  });
+}
+
+
+    var madLibsWords = [];
+    $('#word-input').submit(function(event) {
+    event.preventDefault();
+    // var elements = $(this).find('input[type=text]');
+    // for (var i = 0; i <= elements.length - 1; i++) {
+    //   var value = $(elements[i]).val();
+    //   madLibsWords.push(value);
+    // }
+});
+
+//Mad Libs Scripts
+// Create an empty array to hold the words
+// When the form is submitted
+  // $('#word-input').submit(function(event) {
+// Prevent the default form behavior
+  // event.preventDefault();
+  // var madLibsWords = [];
+  // console.log('prevented default');
+// Get an array of all the <input> elements
+  // var elements = $(this).find('input[type=text]');
+  // console.log('prevented default');
+// Loop through the array of the <input> elements
+   // for (var i = 0; i <= elements.length - 1; i++) {
+  //  For each <input> element, get the value the user entered
+   // var value = $(elements[i]).val();
+  // push the value onto the array of words
+    // madLibsWords.push(value);
+    // }
+// });
+
+
+// Build up the story:
+// var story = "Once upon a time there were two " + madLibsWords[0] + " who had ";
+
+
+
 //Timeout for loading cat gif
 $('#catloader').on('click', function() {
     $('#preloader-img').addClass('preloading-cat');
        setTimeout(function() {
     $('#preloader-img').removeClass('preloading-cat');
     $('#preload-complete, .story-is-ready').addClass('story-loaded');
-    }, 6000)    
+    }, 8000)    
   });
 
 

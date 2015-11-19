@@ -38,24 +38,16 @@ body {
 
 .proceed:hover {
   background-color: #62DE62;
+  border:1px solid #62DE62;
+  color: white;
 }
-
 
 /********** Welcome Block **********/
 
 
-/*i.material-icons.resetForm {
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-left: 10px;
-}
 
-i.material-icons.resetForm:hover {
-  background: red;
-  transition: all .8s ease;
-}
 
-.welcome {
+/*.welcome {
 background-color: #C8F7C5;
 border-bottom: 5px solid #6C7A89;
 }
@@ -194,27 +186,47 @@ float: right;
     text-align: center;
 }
 
+
+/*i.material-icons.resetForm {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+i.material-icons.resetForm:hover {
+  background: red;
+  transition: all .8s ease;
+}*/
+
+.words .buttons {
+  text-align: center;
+}
+
+.reset-form {
+  margin-left: 20px;
+  border-bottom: 1px solid transparent;
+}
+
+.reset-form:hover {
+  transition: all .1s linear;
+  border-bottom: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+
 .words .proceed {
   margin-top: 40px;
+  display: inline-block;
 }
+
 
 
 
 /********* Thinking Block *************/
 
 .thinking {
-  background-color: ##EAE6DB;
+  background-color: #EAE6DB;
   border-bottom: 5px solid #ECF0F1;
-}
-
-.story {
-  background-color: #65C6BB;
-  border-bottom: 5px solid #95A5A6;
-}
-
-.the-end {
-  background-color: #F4D03F;
-  border-bottom: 5px solid #DADFE1;
 }
 
 .story-is-ready,
@@ -222,7 +234,16 @@ float: right;
   display: none;
 }
 
-.story-is-ready.story-loaded,
+.story-is-ready.story-loaded {
+    display: block;
+    background-color: #FFF5BF;
+    margin: 30px auto;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+
 #preload-complete.story-loaded {
   display: block;
 }
@@ -232,6 +253,30 @@ float: right;
 }
 
 #preloader-img.preloading-cat {
-  display: block;
-  height: auto;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 300px;
 }
+
+/********* Story Block *************/
+
+.story {
+  background-color: #65C6BB;
+  border-bottom: 5px solid #95A5A6;
+}
+
+/********* The End Block *************/
+.block.the-end {
+  min-height: 0px;
+}
+
+.the-end img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+

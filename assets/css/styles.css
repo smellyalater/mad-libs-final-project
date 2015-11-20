@@ -279,9 +279,9 @@ i.material-icons.resetForm:hover {
 }
 
 .storytime span {
-    font-weight: bolder;
+    font-weight: 100;
     border-bottom: 1px solid black;
-    font-style: italic;
+    font-family: sans-serif;
 }
 
 /********* The End Block *************/
@@ -298,6 +298,6 @@ i.material-icons.resetForm:hover {
   margin: auto;
 }
 
-
-
-
+.storytime.body-copy {
+    font-weight: bolder;
+}

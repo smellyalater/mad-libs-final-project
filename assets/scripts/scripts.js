@@ -43,7 +43,8 @@ $('#preload-complete').on('click', function() {
   $('#madLibsWords1').text(madLibsWords[1]);
   $('#madLibsWords2').text(madLibsWords[2]);
   $('#madLibsWords3').text(madLibsWords[3]);
-  $('#madLibsWords4').text(madLibsWords[4]);
+  $('#madLibsWords4a').text(madLibsWords[4]);
+  $('#madLibsWords4b').text(madLibsWords[4]);
   $('#madLibsWords5').text(madLibsWords[5]);
   $('#madLibsWords6').text(madLibsWords[6]);
   $('#madLibsWords7').text(madLibsWords[7]);

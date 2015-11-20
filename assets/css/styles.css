@@ -1,3 +1,24 @@
+/***************** Phone Layout ****************/
+@media (max-width: 500px) {
+  .responsive-alert {
+    display: block;
+    background-color: tomato;
+    padding: 10px 20px;
+    width: 80%;
+    margin: 30% auto;
+    font-size: 20px;
+}
+
+
+  div:not(.responsive-alert) {
+    display: none;
+  }
+}
+
+
+/***************** Desktop/Laptop layout ****************/
+@media (min-width: 500px) {
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -43,6 +64,11 @@ body {
 }
 
 /*********** Intro block *************/
+
+.responsive-alert {
+  display: none;
+}
+
 
 .intro {
   background-color: #C8F7C5;
@@ -215,4 +241,5 @@ body {
 
 .storytime.body-copy {
     font-weight: bolder;
+}
 }

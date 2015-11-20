@@ -13,89 +13,83 @@
 </head>
 
 <body>
+    <div class="responsive-alert">
+        <p>This site is not optimized for your device.</p>
+        <p>For optimal experience please visit on a desktop, laptop or tablet.</p>
+        <p>Thank you !</p>
+    </div>
     <!-- Intro -->
     <div id="intro" class="block intro">
         <h1>Exquisite Corpse</h1>
         <div class="body-copy">
-          <p>Welcome friend !</p>
-          <p>We'll be playing a phrasal template word commonly known as Mad Libs<span>&reg.</span></p>
-          <p>A relatively new twist on the <em>Exquisite Corpse</em>.</p>
-          <a class="proceed" href="#instructions">I'm intrigued</a>
+            <p>Welcome friend !</p>
+            <p>We'll be playing a phrasal template word commonly known as Mad Libs<span>&reg.</span></p>
+            <p>A relatively new twist on the <em>Exquisite Corpse</em>.</p>
+            <a class="proceed" href="#instructions">I'm intrigued</a>
         </div>
-        
     </div>
-
-
     <!-- instructions -->
-  <div id="instructions" class="block instructions">
-    <h1>Instructions</h1>
+    <div id="instructions" class="block instructions">
+        <h1>Instructions</h1>
         <div class="body-copy">
             <p>This is very simple.</p>
             <p>I'm going going to ask you for some words.</p>
             <p>Fill them in, select "submit" and then wait patiently.</p>
             <a class="proceed" href="#mad-libs">m'kay</a>
         </div>
-  </div>
-
+    </div>
     <!-- User inserts words -->
     <div id="mad-libs" class="block words">
-      <h1>The Exquisite Corpse</h1>
-      <div class="form-container">
-        <form id="word-input">
-            <input class="input-field" name="plural-noun" type="text" placeholder="Plural Noun">
-            <input class="input-field"  name="adjective" type="text" placeholder="Adjective">
-            <input class="input-field"  name="noun-1" type="text" placeholder="Noun">
-            <input class="input-field"  name="noun-2" type="text" placeholder="Noun">
-            <input class="input-field"  name="part-of-body-1" type="text" placeholder="Part of Body">
-            <input class="input-field"  name="plural-noun" type="text" placeholder="Plural Noun">
-            <input class="input-field"  name="noun-3" type="text" placeholder="Noun">
-            <input class="input-field"  name="noun-4" type="text" placeholder="Noun">
-            <input class="input-field"  name="exclamation" type="text" placeholder="Exclamation">
-            <input class="input-field"  name="noun-5" type="text" placeholder="Noun">
-            <input class="input-field"  name="noun-6" type="text" placeholder="Noun">
-            <input class="input-field"  name="noun-7" type="text" placeholder="Noun">
-            <input class="input-field"  name="verb" type="text" placeholder="Verb">
-            <input class="input-field"  name="noun-8" type="text" placeholder="Noun">
-            <input class="input-field"  name="adjective-2" type="text" placeholder="Adjective">
-            <input class="input-field"  name="noun-8" type="text" placeholder="Noun">
-            <div class="buttons">
-              <input class="proceed" type="submit" value="Submit" id="submit-story"/>
-              <span class="reset-form">Reset Form</span>
-            </div>
-        </form>
-      </div>
+        <h1>The Exquisite Corpse</h1>
+        <div class="form-container">
+            <form id="word-input">
+                <input class="input-field" name="plural-noun" type="text" placeholder="Plural Noun">
+                <input class="input-field" name="adjective" type="text" placeholder="Adjective">
+                <input class="input-field" name="noun-1" type="text" placeholder="Noun">
+                <input class="input-field" name="noun-2" type="text" placeholder="Noun">
+                <input class="input-field" name="part-of-body-1" type="text" placeholder="Part of Body">
+                <input class="input-field" name="plural-noun" type="text" placeholder="Plural Noun">
+                <input class="input-field" name="noun-3" type="text" placeholder="Noun">
+                <input class="input-field" name="noun-4" type="text" placeholder="Noun">
+                <input class="input-field" name="exclamation" type="text" placeholder="Exclamation">
+                <input class="input-field" name="noun-5" type="text" placeholder="Noun">
+                <input class="input-field" name="noun-6" type="text" placeholder="Noun">
+                <input class="input-field" name="noun-7" type="text" placeholder="Noun">
+                <input class="input-field" name="verb" type="text" placeholder="Verb">
+                <input class="input-field" name="noun-8" type="text" placeholder="Noun">
+                <input class="input-field" name="adjective-2" type="text" placeholder="Adjective">
+                <input class="input-field" name="noun-8" type="text" placeholder="Noun">
+                <div class="buttons">
+                    <input class="proceed" type="submit" value="Submit" id="submit-story" />
+                    <span class="reset-form">Reset Form</span>
+                </div>
+            </form>
+        </div>
     </div>
-
-
     <!-- Thinking -->
     <div id="thinking" class="block thinking">
-      <h1>Thinking. . .</h1>
+        <h1>Thinking. . .</h1>
         <img id="preloader-img" src="assets/images/batmanPlayingSuperman.gif" />
         <p class="story-is-ready">It's ready!!</p>
         <a class="proceed" id="preload-complete" href="#story">Read your story</a>
     </div>
-
-
     <!-- Story -->
     <div id="story" class="block story">
-      <h1><em>A one act play to be peformed by <span id="madLibsWords0"></span>.</em></h1>
+        <h1><em>A one act play to be peformed by <span id="madLibsWords0"></span>.</em></h1>
         <div class="storytime body-copy">
-          <p>PATIENT: Thank you very much for seeing me, Doctor on such <span id="madLibsWords1"></span> notice.</p>
-          <p>DENTIST: What is your problem, young <span id="madLibsWords2"></span>? </p>
-          <p>PATIENT: I have a pain in my upper <span id="madLibsWords3"></span>, which is giving me a severe <span id="madLibsWords4a"></span> ache.</p>
-          <p>DENTIST: Let me take a look. Open your <span id="madLibsWords4b"></span> wide.  Good, now I'm going to tap your <span id="madLibsWords5"></span> with my <span id="madLibsWords6"></span>. </p>
-          <p>PATIENT: Shouldn't you give me a <span id="madLibsWords7"></span> killer?</p>
-          <p>DENTIST: It's not necessary yet, <span id="madLibsWords8"></span>!  I think i see a <span id="madLibsWords9"></span> in your <span id="madLibsWords10"></span>.</p>
-          <p>PATIENT: Are you going to pull my <span id="madLibsWords11"></span> out?</p>
-          <p>DENTIST: No, I'm going to <span id="madLibsWords12"></span> your tooth and put in a temporary <span id="madLibsWords13"></span>.</p>
-          <p>PATIENT: When do I come back for the <span id="madLibsWords14"></span> filling. </p>
-          <p>DENTIST: A day after I cash your <span id="madLibsWords15"></span>.</p>
-          <a class="proceed" href="#the-end">Thank you !</a>
+            <p>PATIENT: Thank you very much for seeing me, Doctor on such <span id="madLibsWords1"></span> notice.</p>
+            <p>DENTIST: What is your problem, young <span id="madLibsWords2"></span>? </p>
+            <p>PATIENT: I have a pain in my upper <span id="madLibsWords3"></span>, which is giving me a severe <span id="madLibsWords4a"></span> ache.</p>
+            <p>DENTIST: Let me take a look. Open your <span id="madLibsWords4b"></span> wide. Good, now I'm going to tap your <span id="madLibsWords5"></span> with my <span id="madLibsWords6"></span>. </p>
+            <p>PATIENT: Shouldn't you give me a <span id="madLibsWords7"></span> killer?</p>
+            <p>DENTIST: It's not necessary yet, <span id="madLibsWords8"></span>! I think i see a <span id="madLibsWords9"></span> in your <span id="madLibsWords10"></span>.</p>
+            <p>PATIENT: Are you going to pull my <span id="madLibsWords11"></span> out?</p>
+            <p>DENTIST: No, I'm going to <span id="madLibsWords12"></span> your tooth and put in a temporary <span id="madLibsWords13"></span>.</p>
+            <p>PATIENT: When do I come back for the <span id="madLibsWords14"></span> filling. </p>
+            <p>DENTIST: A day after I cash your <span id="madLibsWords15"></span>.</p>
+            <a class="proceed" href="#the-end">Thank you !</a>
         </div>
-        
     </div>
-
-
     <!-- The End -->
     <div id="the-end" class="block the-end">
         <img src="assets/images/fin.jpg" />

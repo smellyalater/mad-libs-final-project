@@ -42,70 +42,6 @@ body {
   color: white;
 }
 
-/********** Welcome Block **********/
-
-
-
-
-/*.welcome {
-background-color: #C8F7C5;
-border-bottom: 5px solid #6C7A89;
-}
-
-.welcome h1 {
-  display: inline-block;
-  text-align: center;
-  background: tomato;
-  margin: 0;
-  padding: 10px 0;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.form-container {
-  background: lightblue;
-  padding: 20px;
-  margin-top: 50px;
-  display: inline-block;
-  width: 460px;
-  font-size: 24px;
-}
-
-input.first-name {
-  display: inline-block;
-  padding: 10px;
-  width: 358px;
-  margin-top: 10px;
-  font-size: .7em;
-  border: none;
-  background: #E4F8FF;
-}
-
-form.name-form {
-width: 500px;
-}
-
-.form-actions {
-float: right;
-}
-
-.name-form-submit {
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px 50px;
-  font-size: 16px;
-  margin: 10px 0;
-  display: inline-block;
-  border-radius: 500px;
-  float: right;
-  transition: all .3s ease;
-}
-
-.name-form-submit:hover {
-  background-color: #62DE62;
-}*/
-
-
 /*********** Intro block *************/
 
 .intro {
@@ -149,13 +85,6 @@ float: right;
   font-size: 24px;
 }
 
-.instructions p:first-of-type {
-  border-bottom: 2px solid #6C7A89;
-  display: inline-block;
-  margin-bottom: -2px;
-
-}
-
 .instructions .proceed {
   display: block;
   margin: 0 auto;
@@ -187,17 +116,6 @@ float: right;
 }
 
 
-/*i.material-icons.resetForm {
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-left: 10px;
-}
-
-i.material-icons.resetForm:hover {
-  background: red;
-  transition: all .8s ease;
-}*/
-
 .words .buttons {
   text-align: center;
 }
@@ -218,9 +136,6 @@ i.material-icons.resetForm:hover {
   margin-top: 40px;
   display: inline-block;
 }
-
-
-
 
 /********* Thinking Block *************/
 
